@@ -2,7 +2,7 @@ var map;
 var infowindow;
 
 function initMap() {
-  var rome = {lat: 41.9028, lng: 12.4964};
+  var rome = {lat: 41.8873, lng: 12.4656};
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: rome,
@@ -14,7 +14,7 @@ function initMap() {
   service.nearbySearch({
     location: rome,
     radius: 500,
-    type: ['store']
+    type: ['museum']
   }, callback);
 }
 
