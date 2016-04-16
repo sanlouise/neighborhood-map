@@ -2,23 +2,23 @@ var map;
 var infowindow;
 
 function initMap() {
-  var rome = {lat: 41.8873, lng: 12.4656};
+  var gili = {lat: -8.355822, lng: 116.056404};
 
   map = new google.maps.Map(document.getElementById('map'), {
-    center: rome,
-    zoom: 16
+    center: gili,
+    zoom: 15
 
 
 
-    
+
   });
 
   infowindow = new google.maps.InfoWindow();
   var service = new google.maps.places.PlacesService(map);
   service.nearbySearch({
-    location: rome,
+    location: gili,
     radius: 800,
-    type: ['restaurant']
+    type: ['diving']
   }, callback);
 }
 
