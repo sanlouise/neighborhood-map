@@ -6,15 +6,19 @@ function initMap() {
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: rome,
-    zoom: 15
+    zoom: 16
+
+
+
+    
   });
 
   infowindow = new google.maps.InfoWindow();
   var service = new google.maps.places.PlacesService(map);
   service.nearbySearch({
     location: rome,
-    radius: 500,
-    type: ['museum']
+    radius: 800,
+    type: ['restaurant']
   }, callback);
 }
 
